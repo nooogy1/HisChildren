@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | His Children</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-logo">
+        <a href="index.html">His Children</a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="collections/heirloom-wooden.html">Heirloom Wooden</a></li>
+          <li><a href="collections/imagination-builders.html">Imagination Builders</a></li>
+          <li><a href="collections/storybook-friends.html">Storybook Friends</a></li>
+          <li><a href="collections/wonder-learn.html">Wonder & Learn</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+          Cart <span class="cart-count"></span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Open menu" onclick="toggleMobileNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" aria-label="Close menu" onclick="toggleMobileNav()">&times;</button>
+    <ul>
+      <li><a href="collections/heirloom-wooden.html">Heirloom Wooden</a></li>
+      <li><a href="collections/imagination-builders.html">Imagination Builders</a></li>
+      <li><a href="collections/storybook-friends.html">Storybook Friends</a></li>
+      <li><a href="collections/wonder-learn.html">Wonder & Learn</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Page Header -->
+    <div class="page-header">
+      <h1>Your Cart</h1>
+    </div>
+
+    <div class="container">
+      <!-- Empty Cart State -->
+      <div class="cart-empty" id="cartEmpty" style="display: none;">
+        <h2>Your cart is empty</h2>
+        <p>Discover something wonderful for the little ones in your life.</p>
+        <a href="collection.html" class="btn btn--primary">Explore Collections</a>
+      </div>
+
+      <!-- Cart with Items -->
+      <div class="cart-layout" id="cartContent">
+        <div class="cart-items" id="cartItems">
+          <!-- Cart items will be rendered here by JavaScript -->
+        </div>
+
+        <div class="cart-summary" id="cartSummary">
+          <h3>Order Summary</h3>
+          <div class="cart-summary-row">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">$0.00</span>
+          </div>
+          <div class="cart-summary-row">
+            <span>Shipping</span>
+            <span id="cartShipping">Calculated at checkout</span>
+          </div>
+          <div class="cart-summary-row" style="font-size: var(--text-xs); color: var(--color-text-muted);">
+            <span>Free shipping on orders over $75</span>
+          </div>
+          <div class="cart-summary-total">
+            <span>Total</span>
+            <span id="cartTotal">$0.00</span>
+          </div>
+          <a href="checkout.html" class="btn btn--primary btn--full" id="checkoutBtn">Proceed to Checkout</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">His Children</div>
+      <p class="footer-tagline">
+        Thoughtful toys for purposeful play. Crafted with intention, made to be treasured.
+      </p>
+      <nav class="footer-nav">
+        <a href="collection.html">All Collections</a>
+        <a href="collections/heirloom-wooden.html">Heirloom Wooden</a>
+        <a href="collections/imagination-builders.html">Imagination Builders</a>
+        <a href="collections/storybook-friends.html">Storybook Friends</a>
+        <a href="collections/wonder-learn.html">Wonder & Learn</a>
+      </nav>
+      <p class="footer-copyright">&copy; 2024 His Children. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script>
+    function toggleMobileNav() {
+      const nav = document.getElementById('mobileNav');
+      nav.classList.toggle('is-open');
+    }
+
+    function renderCart() {
+      const items = Cart.getItems();
+      const cartEmpty = document.getElementById('cartEmpty');
+      const cartContent = document.getElementById('cartContent');
+      const cartItemsEl = document.getElementById('cartItems');
+
+      if (items.length === 0) {
+        cartEmpty.style.display = 'block';
+        cartContent.style.display = 'none';
+        return;
+      }
+
+      cartEmpty.style.display = 'none';
+      cartContent.style.display = 'grid';
+
+      cartItemsEl.innerHTML = items.map(item => `
+        <div class="cart-item" data-id="${item.id}">
+          <div class="cart-item-image img-placeholder">
+            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+              <rect width="120" height="120" fill="#E8E4DD"/>
+              <rect x="30" y="50" width="20" height="30" fill="#D4CFC5"/>
+              <rect x="50" y="40" width="20" height="40" fill="#B8AFA3"/>
+              <rect x="70" y="30" width="20" height="50" fill="#D4CFC5"/>
+            </svg>
+          </div>
+          <div class="cart-item-info">
+            <h3 class="cart-item-name">${item.name}</h3>
+            <p class="cart-item-price">${Cart.formatPrice(item.price)}</p>
+            <div class="cart-item-quantity">
+              <div class="quantity-input">
+                <button type="button" onclick="updateItemQuantity('${item.id}', ${item.quantity - 1})"></button>
+                <input type="number" value="${item.quantity}" min="1" max="10"
+                       onchange="updateItemQuantity('${item.id}', parseInt(this.value))" readonly>
+                <button type="button" onclick="updateItemQuantity('${item.id}', ${item.quantity + 1})">+</button>
+              </div>
+            </div>
+            <button class="cart-item-remove" onclick="removeItem('${item.id}')">Remove</button>
+          </div>
+          <div class="cart-item-total">${Cart.formatPrice(item.price * item.quantity)}</div>
+        </div>
+      `).join('');
+
+      updateTotals();
+    }
+
+    function updateItemQuantity(productId, quantity) {
+      if (quantity < 1) {
+        removeItem(productId);
+        return;
+      }
+      if (quantity > 10) quantity = 10;
+      Cart.updateQuantity(productId, quantity);
+      renderCart();
+    }
+
+    function removeItem(productId) {
+      Cart.removeItem(productId);
+      renderCart();
+    }
+
+    function updateTotals() {
+      const totals = Cart.getTotals();
+      document.getElementById('cartSubtotal').textContent = Cart.formatPrice(totals.subtotal);
+
+      if (totals.shipping === 0 && totals.subtotal > 0) {
+        document.getElementById('cartShipping').textContent = 'Free';
+      } else if (totals.subtotal === 0) {
+        document.getElementById('cartShipping').textContent = 'Calculated at checkout';
+      } else {
+        document.getElementById('cartShipping').textContent = Cart.formatPrice(totals.shipping);
+      }
+
+      document.getElementById('cartTotal').textContent = Cart.formatPrice(totals.total);
+    }
+
+    // Initialize cart on page load
+    document.addEventListener('DOMContentLoaded', renderCart);
+  </script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Collections | His Children</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-logo">
+        <a href="index.html">His Children</a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="collections/heirloom-wooden.html">Heirloom Wooden</a></li>
+          <li><a href="collections/imagination-builders.html">Imagination Builders</a></li>
+          <li><a href="collections/storybook-friends.html">Storybook Friends</a></li>
+          <li><a href="collections/wonder-learn.html">Wonder & Learn</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+          Cart <span class="cart-count"></span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Open menu" onclick="toggleMobileNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" aria-label="Close menu" onclick="toggleMobileNav()">&times;</button>
+    <ul>
+      <li><a href="collections/heirloom-wooden.html">Heirloom Wooden</a></li>
+      <li><a href="collections/imagination-builders.html">Imagination Builders</a></li>
+      <li><a href="collections/storybook-friends.html">Storybook Friends</a></li>
+      <li><a href="collections/wonder-learn.html">Wonder & Learn</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Page Header -->
+    <div class="page-header">
+      <h1>All Collections</h1>
+      <p>Explore our thoughtfully curated toy collections, each designed to inspire purposeful play</p>
+    </div>
+
+    <!-- Collections Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="collection-grid">
+          <a href="collections/heirloom-wooden.html" class="collection-card">
+            <div class="collection-card-image img-placeholder">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#E8E4DD"/>
+                <rect x="140" y="180" width="40" height="60" fill="#B8AFA3"/>
+                <rect x="180" y="160" width="40" height="80" fill="#D4CFC5"/>
+                <rect x="220" y="140" width="40" height="100" fill="#B8AFA3"/>
+                <rect x="155" y="120" width="90" height="20" fill="#D4CFC5" rx="2"/>
+              </svg>
+            </div>
+            <div class="collection-card-content">
+              <h3 class="collection-card-title">Heirloom Wooden</h3>
+              <p class="collection-card-description">Timeless wooden toys crafted to be treasured and passed down through generations. Each piece celebrates the beauty of natural materials and simple, open-ended play.</p>
+            </div>
+          </a>
+
+          <a href="collections/imagination-builders.html" class="collection-card">
+            <div class="collection-card-image img-placeholder">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#E8E4DD"/>
+                <rect x="120" y="200" width="160" height="20" fill="#B8AFA3"/>
+                <rect x="140" y="180" width="50" height="20" fill="#D4CFC5"/>
+                <rect x="210" y="180" width="50" height="20" fill="#D4CFC5"/>
+                <rect x="150" y="140" width="100" height="40" fill="#B8AFA3"/>
+                <rect x="175" y="100" width="50" height="40" fill="#D4CFC5"/>
+              </svg>
+            </div>
+            <div class="collection-card-content">
+              <h3 class="collection-card-title">Imagination Builders</h3>
+              <p class="collection-card-description">Construction sets that transform simple pieces into extraordinary creations. Perfect for budding architects, engineers, and dreamers of all ages.</p>
+            </div>
+          </a>
+
+          <a href="collections/storybook-friends.html" class="collection-card">
+            <div class="collection-card-image img-placeholder">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#E8E4DD"/>
+                <ellipse cx="200" cy="180" rx="50" ry="60" fill="#D4CFC5"/>
+                <circle cx="200" cy="130" r="35" fill="#D4CFC5"/>
+                <circle cx="185" cy="125" r="5" fill="#8B8279"/>
+                <circle cx="215" cy="125" r="5" fill="#8B8279"/>
+                <ellipse cx="175" cy="100" rx="12" ry="20" fill="#D4CFC5"/>
+                <ellipse cx="225" cy="100" rx="12" ry="20" fill="#D4CFC5"/>
+              </svg>
+            </div>
+            <div class="collection-card-content">
+              <h3 class="collection-card-title">Storybook Friends</h3>
+              <p class="collection-card-description">Soft companions crafted from organic materials, ready for a lifetime of love. Each friend is designed to comfort, inspire stories, and become a treasured companion.</p>
+            </div>
+          </a>
+
+          <a href="collections/wonder-learn.html" class="collection-card">
+            <div class="collection-card-image img-placeholder">
+              <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="300" fill="#E8E4DD"/>
+                <rect x="130" y="140" width="140" height="100" fill="#D4CFC5" rx="4"/>
+                <rect x="145" y="155" width="30" height="30" fill="#B8AFA3" rx="2"/>
+                <rect x="185" y="155" width="30" height="30" fill="#B8AFA3" rx="2"/>
+                <rect x="225" y="155" width="30" height="30" fill="#B8AFA3" rx="2"/>
+                <rect x="145" y="195" width="30" height="30" fill="#B8AFA3" rx="2"/>
+                <rect x="185" y="195" width="30" height="30" fill="#B8AFA3" rx="2"/>
+                <rect x="225" y="195" width="30" height="30" fill="#B8AFA3" rx="2"/>
+              </svg>
+            </div>
+            <div class="collection-card-content">
+              <h3 class="collection-card-title">Wonder & Learn</h3>
+              <p class="collection-card-description">Thoughtful tools that nurture curiosity and celebrate the joy of discovery. Learning happens naturally through exploration and purposeful play.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Products -->
+    <section class="section" style="background-color: var(--color-surface);">
+      <div class="container">
+        <div class="text-center mb-2xl">
+          <h2>All Toys</h2>
+          <p class="text-secondary">Every item in our collection, crafted with intention</p>
+        </div>
+
+        <div class="product-grid">
+          <!-- Heirloom Wooden Products -->
+          <a href="products/heritage-block-set.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="80" y="180" width="40" height="60" fill="#D4CFC5"/>
+                <rect x="130" y="160" width="40" height="80" fill="#B8AFA3"/>
+                <rect x="180" y="140" width="40" height="100" fill="#D4CFC5"/>
+                <rect x="100" y="120" width="100" height="20" fill="#B8AFA3" rx="2"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">The Heritage Block Set</h3>
+              <p class="product-card-price">$68</p>
+            </div>
+          </a>
+
+          <a href="products/woodland-animal-family.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <ellipse cx="100" cy="200" rx="25" ry="30" fill="#B8AFA3"/>
+                <circle cx="100" cy="170" r="18" fill="#B8AFA3"/>
+                <ellipse cx="150" cy="210" rx="20" ry="25" fill="#D4CFC5"/>
+                <circle cx="150" cy="185" r="15" fill="#D4CFC5"/>
+                <ellipse cx="200" cy="195" rx="28" ry="35" fill="#C9B896"/>
+                <circle cx="200" cy="160" r="20" fill="#C9B896"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Woodland Animal Family</h3>
+              <p class="product-card-price">$45</p>
+            </div>
+          </a>
+
+          <a href="products/classic-stacking-rainbow.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <path d="M60 220 Q150 80 240 220" stroke="#C4A99C" stroke-width="20" fill="none"/>
+                <path d="M80 220 Q150 110 220 220" stroke="#C9B896" stroke-width="18" fill="none"/>
+                <path d="M100 220 Q150 130 200 220" stroke="#9BA88E" stroke-width="16" fill="none"/>
+                <path d="M120 220 Q150 150 180 220" stroke="#9EAFB8" stroke-width="14" fill="none"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Classic Stacking Rainbow</h3>
+              <p class="product-card-price">$52</p>
+            </div>
+          </a>
+
+          <a href="products/timeless-train-set.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="60" y="180" width="60" height="40" fill="#B8AFA3" rx="4"/>
+                <rect x="130" y="185" width="40" height="35" fill="#D4CFC5"/>
+                <rect x="180" y="185" width="40" height="35" fill="#D4CFC5"/>
+                <circle cx="80" cy="220" r="10" fill="#8B8279"/>
+                <circle cx="100" cy="220" r="10" fill="#8B8279"/>
+                <circle cx="150" cy="220" r="8" fill="#8B8279"/>
+                <circle cx="200" cy="220" r="8" fill="#8B8279"/>
+                <rect x="70" y="165" width="15" height="15" fill="#D4CFC5"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Timeless Train Set</h3>
+              <p class="product-card-price">$85</p>
+            </div>
+          </a>
+
+          <a href="products/handcrafted-memory-puzzle.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="80" y="120" width="50" height="50" fill="#D4CFC5" rx="4"/>
+                <rect x="140" y="120" width="50" height="50" fill="#B8AFA3" rx="4"/>
+                <rect x="80" y="180" width="50" height="50" fill="#B8AFA3" rx="4"/>
+                <rect x="140" y="180" width="50" height="50" fill="#D4CFC5" rx="4"/>
+                <circle cx="105" cy="145" r="12" fill="#9BA88E"/>
+                <circle cx="165" cy="205" r="12" fill="#9BA88E"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Handcrafted Memory Puzzle</h3>
+              <p class="product-card-price">$38</p>
+            </div>
+          </a>
+
+          <!-- Imagination Builders Products -->
+          <a href="products/architects-dream-set.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="60" y="200" width="180" height="8" fill="#D4CFC5"/>
+                <rect x="70" y="188" width="160" height="8" fill="#B8AFA3"/>
+                <rect x="80" y="176" width="140" height="8" fill="#D4CFC5"/>
+                <rect x="90" y="164" width="120" height="8" fill="#B8AFA3"/>
+                <rect x="100" y="152" width="100" height="8" fill="#D4CFC5"/>
+                <rect x="110" y="140" width="80" height="8" fill="#B8AFA3"/>
+                <rect x="120" y="128" width="60" height="8" fill="#D4CFC5"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Architect's Dream Set</h3>
+              <p class="product-card-price">$72</p>
+            </div>
+          </a>
+
+          <a href="products/natural-building-planks.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="80" y="140" width="140" height="12" fill="#D4CFC5" rx="1"/>
+                <rect x="90" y="156" width="140" height="12" fill="#B8AFA3" rx="1"/>
+                <rect x="75" y="172" width="140" height="12" fill="#D4CFC5" rx="1"/>
+                <rect x="85" y="188" width="140" height="12" fill="#B8AFA3" rx="1"/>
+                <rect x="95" y="204" width="140" height="12" fill="#D4CFC5" rx="1"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Natural Building Planks</h3>
+              <p class="product-card-price">$58</p>
+            </div>
+          </a>
+
+          <a href="products/create-connect-blocks.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="90" y="160" width="50" height="50" fill="#B8AFA3" rx="2"/>
+                <rect x="140" y="160" width="50" height="50" fill="#D4CFC5" rx="2"/>
+                <rect x="115" y="110" width="50" height="50" fill="#D4CFC5" rx="2"/>
+                <circle cx="115" cy="185" r="5" fill="#8B8279"/>
+                <circle cx="165" cy="185" r="5" fill="#8B8279"/>
+                <circle cx="140" cy="135" r="5" fill="#8B8279"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Create & Connect Blocks</h3>
+              <p class="product-card-price">$48</p>
+            </div>
+          </a>
+
+          <a href="products/little-engineer-kit.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="80" y="150" width="100" height="50" fill="#D4CFC5" rx="4"/>
+                <circle cx="105" cy="200" r="20" fill="#B8AFA3"/>
+                <circle cx="155" cy="200" r="20" fill="#B8AFA3"/>
+                <circle cx="105" cy="200" r="8" fill="#8B8279"/>
+                <circle cx="155" cy="200" r="8" fill="#8B8279"/>
+                <rect x="200" y="140" width="30" height="60" fill="#B8AFA3" rx="2"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Little Engineer Kit</h3>
+              <p class="product-card-price">$65</p>
+            </div>
+          </a>
+
+          <a href="products/magnetic-wonder-tiles.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="100" y="170" width="50" height="50" fill="#9EAFB8" rx="2"/>
+                <rect x="150" y="170" width="50" height="50" fill="#C4A99C" rx="2"/>
+                <polygon points="125,120 100,170 150,170" fill="#9BA88E"/>
+                <polygon points="175,120 150,170 200,170" fill="#C9B896"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Magnetic Wonder Tiles</h3>
+              <p class="product-card-price">$78</p>
+            </div>
+          </a>
+
+          <!-- Storybook Friends Products -->
+          <a href="products/oliver-gentle-bear.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <ellipse cx="150" cy="180" rx="45" ry="55" fill="#C9B896"/>
+                <circle cx="150" cy="125" r="40" fill="#C9B896"/>
+                <circle cx="135" cy="118" r="5" fill="#5C5650"/>
+                <circle cx="165" cy="118" r="5" fill="#5C5650"/>
+                <ellipse cx="150" cy="135" rx="8" ry="5" fill="#8B8279"/>
+                <circle cx="115" cy="95" r="15" fill="#C9B896"/>
+                <circle cx="185" cy="95" r="15" fill="#C9B896"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Oliver the Gentle Bear</h3>
+              <p class="product-card-price">$42</p>
+            </div>
+          </a>
+
+          <a href="products/luna-comfort-bunny.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <ellipse cx="150" cy="190" rx="40" ry="50" fill="#E8E4DD"/>
+                <circle cx="150" cy="140" r="35" fill="#E8E4DD"/>
+                <circle cx="138" cy="135" r="4" fill="#5C5650"/>
+                <circle cx="162" cy="135" r="4" fill="#5C5650"/>
+                <ellipse cx="150" cy="148" rx="5" ry="4" fill="#C4A99C"/>
+                <ellipse cx="130" cy="80" rx="10" ry="40" fill="#E8E4DD"/>
+                <ellipse cx="170" cy="80" rx="10" ry="40" fill="#E8E4DD"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Luna the Comfort Bunny</h3>
+              <p class="product-card-price">$38</p>
+            </div>
+          </a>
+
+          <a href="products/sebastian-wise-owl.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <ellipse cx="150" cy="175" rx="45" ry="55" fill="#B8AFA3"/>
+                <circle cx="130" cy="145" r="20" fill="#E8E4DD"/>
+                <circle cx="170" cy="145" r="20" fill="#E8E4DD"/>
+                <circle cx="130" cy="145" r="8" fill="#5C5650"/>
+                <circle cx="170" cy="145" r="8" fill="#5C5650"/>
+                <polygon points="150,160 145,175 155,175" fill="#C9B896"/>
+                <polygon points="110,120 130,140 120,140" fill="#B8AFA3"/>
+                <polygon points="190,120 170,140 180,140" fill="#B8AFA3"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Sebastian the Wise Owl</h3>
+              <p class="product-card-price">$40</p>
+            </div>
+          </a>
+
+          <a href="products/rosie-kind-fox.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <ellipse cx="150" cy="185" rx="40" ry="50" fill="#C4A99C"/>
+                <circle cx="150" cy="135" r="35" fill="#C4A99C"/>
+                <circle cx="135" cy="128" r="4" fill="#5C5650"/>
+                <circle cx="165" cy="128" r="4" fill="#5C5650"/>
+                <ellipse cx="150" cy="145" rx="6" ry="4" fill="#5C5650"/>
+                <polygon points="120,100 130,130 110,120" fill="#C4A99C"/>
+                <polygon points="180,100 170,130 190,120" fill="#C4A99C"/>
+                <ellipse cx="150" cy="200" rx="20" ry="15" fill="#E8E4DD"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Rosie the Kind Fox</h3>
+              <p class="product-card-price">$42</p>
+            </div>
+          </a>
+
+          <a href="products/theodore-brave-lion.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <circle cx="150" cy="145" r="50" fill="#C9B896"/>
+                <circle cx="150" cy="145" r="35" fill="#E8E4DD"/>
+                <circle cx="138" cy="138" r="5" fill="#5C5650"/>
+                <circle cx="162" cy="138" r="5" fill="#5C5650"/>
+                <ellipse cx="150" cy="155" rx="8" ry="5" fill="#C4A99C"/>
+                <ellipse cx="150" cy="200" rx="35" ry="40" fill="#C9B896"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Theodore the Brave Lion</h3>
+              <p class="product-card-price">$45</p>
+            </div>
+          </a>
+
+          <!-- Wonder & Learn Products -->
+          <a href="products/nature-discovery-kit.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="80" y="130" width="140" height="90" fill="#B8AFA3" rx="4"/>
+                <rect x="95" y="145" width="30" height="30" fill="#9BA88E" rx="15"/>
+                <rect x="135" y="145" width="30" height="30" fill="#D4CFC5" rx="2"/>
+                <rect x="175" y="145" width="30" height="30" fill="#D4CFC5" rx="2"/>
+                <line x1="110" y1="185" x2="110" y2="205" stroke="#8B8279" stroke-width="3"/>
+                <circle cx="110" cy="200" r="8" fill="none" stroke="#8B8279" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Nature Discovery Kit</h3>
+              <p class="product-card-price">$55</p>
+            </div>
+          </a>
+
+          <a href="products/first-words-letters.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="80" y="140" width="40" height="50" fill="#D4CFC5" rx="4"/>
+                <rect x="130" y="140" width="40" height="50" fill="#B8AFA3" rx="4"/>
+                <rect x="180" y="140" width="40" height="50" fill="#D4CFC5" rx="4"/>
+                <text x="92" y="175" font-family="Georgia" font-size="24" fill="#5C5650">A</text>
+                <text x="142" y="175" font-family="Georgia" font-size="24" fill="#5C5650">B</text>
+                <text x="192" y="175" font-family="Georgia" font-size="24" fill="#5C5650">C</text>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">First Words & Letters</h3>
+              <p class="product-card-price">$42</p>
+            </div>
+          </a>
+
+          <a href="products/counting-garden-set.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="80" y="180" width="40" height="35" fill="#B8AFA3" rx="2"/>
+                <rect x="130" y="180" width="40" height="35" fill="#B8AFA3" rx="2"/>
+                <rect x="180" y="180" width="40" height="35" fill="#B8AFA3" rx="2"/>
+                <ellipse cx="100" cy="165" rx="8" ry="15" fill="#C4A99C"/>
+                <ellipse cx="150" cy="160" rx="8" ry="20" fill="#C4A99C"/>
+                <ellipse cx="145" cy="155" rx="8" ry="20" fill="#C4A99C"/>
+                <circle cx="200" cy="165" r="10" fill="#9BA88E"/>
+                <line x1="100" y1="150" x2="100" y2="130" stroke="#9BA88E" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Counting Garden Set</h3>
+              <p class="product-card-price">$48</p>
+            </div>
+          </a>
+
+          <a href="products/little-explorers-map.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="60" y="100" width="180" height="120" fill="#E8E4DD" rx="4"/>
+                <ellipse cx="110" cy="150" rx="25" ry="20" fill="#9BA88E"/>
+                <ellipse cx="180" cy="140" rx="30" ry="25" fill="#9BA88E"/>
+                <ellipse cx="150" cy="180" rx="35" ry="15" fill="#9EAFB8"/>
+                <circle cx="100" cy="145" r="4" fill="#C4A99C"/>
+                <circle cx="175" cy="150" r="4" fill="#C4A99C"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Little Explorer's Map</h3>
+              <p class="product-card-price">$35</p>
+            </div>
+          </a>
+
+          <a href="products/seasons-learning-board.html" class="product-card">
+            <div class="product-card-image img-placeholder">
+              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" fill="#FAF8F5"/>
+                <rect x="70" y="100" width="160" height="120" fill="#D4CFC5" rx="4"/>
+                <circle cx="110" cy="140" r="20" fill="#C9B896"/>
+                <circle cx="190" cy="140" r="20" fill="#9EAFB8"/>
+                <rect x="100" y="175" width="40" height="25" fill="#9BA88E" rx="2"/>
+                <rect x="160" y="175" width="40" height="25" fill="#C4A99C" rx="2"/>
+              </svg>
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Seasons Learning Board</h3>
+              <p class="product-card-price">$52</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">His Children</div>
+      <p class="footer-tagline">
+        Thoughtful toys for purposeful play. Crafted with intention, made to be treasured.
+      </p>
+      <nav class="footer-nav">
+        <a href="collection.html">All Collections</a>
+        <a href="collections/heirloom-wooden.html">Heirloom Wooden</a>
+        <a href="collections/imagination-builders.html">Imagination Builders</a>
+        <a href="collections/storybook-friends.html">Storybook Friends</a>
+        <a href="collections/wonder-learn.html">Wonder & Learn</a>
+      </nav>
+      <p class="footer-copyright">&copy; 2024 His Children. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script>
+    function toggleMobileNav() {
+      const nav = document.getElementById('mobileNav');
+      nav.classList.toggle('is-open');
+    }
+  </script>
+</body>
+</html>
