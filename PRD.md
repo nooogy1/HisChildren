@@ -39,6 +39,7 @@ This site is meant to **communicate brand, values, and experience**, not to tran
 - No overt preaching or heavy religious iconography
 - Emphasize themes such as:
   - Stewardship
+  - Tradition
   - Thoughtfulness
   - Family
   - Simplicity
