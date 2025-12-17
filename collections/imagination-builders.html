@@ -69,56 +69,8 @@
     <!-- Products Grid -->
     <section class="section">
       <div class="container">
-        <div class="product-grid">
-          <a href="../products/architects-dream-set.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/architects-dream-set.jpg" alt="Architect's Dream Set">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">Architect's Dream Set</h3>
-              <p class="product-card-price">$72</p>
-            </div>
-          </a>
-
-          <a href="../products/natural-building-planks.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/natural-building-planks.jpg" alt="Natural Building Planks">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">Natural Building Planks</h3>
-              <p class="product-card-price">$58</p>
-            </div>
-          </a>
-
-          <a href="../products/create-connect-blocks.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/create-connect-blocks.jpg" alt="Create & Connect Blocks">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">Create & Connect Blocks</h3>
-              <p class="product-card-price">$48</p>
-            </div>
-          </a>
-
-          <a href="../products/little-engineer-kit.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/little-engineer-kit.jpg" alt="Little Engineer Kit">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">Little Engineer Kit</h3>
-              <p class="product-card-price">$65</p>
-            </div>
-          </a>
-
-          <a href="../products/magnetic-wonder-tiles.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/magnetic-wonder-tiles.jpg" alt="Magnetic Wonder Tiles">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">Magnetic Wonder Tiles</h3>
-              <p class="product-card-price">$78</p>
-            </div>
-          </a>
+        <div class="product-grid" id="products-grid">
+          <!-- Products will be rendered dynamically -->
         </div>
       </div>
     </section>
@@ -149,6 +101,13 @@
         <a href="storybook-friends.html">Storybook Friends</a>
         <a href="wonder-learn.html">Wonder & Learn</a>
       </nav>
+      <nav class="footer-nav footer-legal">
+        <a href="../about.html">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Return/Refund Policy</a>
+        <a href="#">Shipping Policy</a>
+      </nav>
       <p class="footer-copyright">&copy; 2024 His Children. All rights reserved.</p>
     </div>
   </footer>
@@ -159,6 +118,12 @@
       const nav = document.getElementById('mobileNav');
       nav.classList.toggle('is-open');
     }
+
+    // Load products and render collection
+    document.addEventListener('DOMContentLoaded', async () => {
+      await loadProductData('../');
+      renderCollectionProducts('imagination-builders', 'products-grid', '../');
+    });
   </script>
 </body>
 </html>

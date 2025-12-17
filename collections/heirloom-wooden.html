@@ -69,56 +69,8 @@
     <!-- Products Grid -->
     <section class="section">
       <div class="container">
-        <div class="product-grid">
-          <a href="../products/heritage-block-set.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/heritage-block-set.jpg" alt="The Heritage Block Set">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">The Heritage Block Set</h3>
-              <p class="product-card-price">$68</p>
-            </div>
-          </a>
-
-          <a href="../products/woodland-animal-family.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/woodland-animal-family.jpg" alt="Woodland Animal Family">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">Woodland Animal Family</h3>
-              <p class="product-card-price">$45</p>
-            </div>
-          </a>
-
-          <a href="../products/classic-stacking-rainbow.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/classic-stacking-rainbow.jpg" alt="Classic Stacking Rainbow">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">Classic Stacking Rainbow</h3>
-              <p class="product-card-price">$52</p>
-            </div>
-          </a>
-
-          <a href="../products/timeless-train-set.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/timeless-train-set.jpg" alt="Timeless Train Set">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">Timeless Train Set</h3>
-              <p class="product-card-price">$85</p>
-            </div>
-          </a>
-
-          <a href="../products/handcrafted-memory-puzzle.html" class="product-card">
-            <div class="product-card-image">
-              <img src="../images/handcrafted-memory-puzzle.jpg" alt="Handcrafted Memory Puzzle">
-            </div>
-            <div class="product-card-info">
-              <h3 class="product-card-name">Handcrafted Memory Puzzle</h3>
-              <p class="product-card-price">$38</p>
-            </div>
-          </a>
+        <div class="product-grid" id="products-grid">
+          <!-- Products will be rendered dynamically -->
         </div>
       </div>
     </section>
@@ -149,6 +101,13 @@
         <a href="storybook-friends.html">Storybook Friends</a>
         <a href="wonder-learn.html">Wonder & Learn</a>
       </nav>
+      <nav class="footer-nav footer-legal">
+        <a href="../about.html">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Return/Refund Policy</a>
+        <a href="#">Shipping Policy</a>
+      </nav>
       <p class="footer-copyright">&copy; 2024 His Children. All rights reserved.</p>
     </div>
   </footer>
@@ -159,6 +118,12 @@
       const nav = document.getElementById('mobileNav');
       nav.classList.toggle('is-open');
     }
+
+    // Load products and render collection
+    document.addEventListener('DOMContentLoaded', async () => {
+      await loadProductData('../');
+      renderCollectionProducts('heirloom-wooden', 'products-grid', '../');
+    });
   </script>
 </body>
 </html>
