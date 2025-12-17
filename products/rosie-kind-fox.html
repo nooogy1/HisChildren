@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rosie the Kind Fox | His Children</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><div class="site-logo"><a href="../index.html">His Children</a></div><nav class="main-nav"><ul><li><a href="../collections/heirloom-wooden.html">Heirloom Wooden</a></li><li><a href="../collections/imagination-builders.html">Imagination Builders</a></li><li><a href="../collections/storybook-friends.html">Storybook Friends</a></li><li><a href="../collections/wonder-learn.html">Wonder & Learn</a></li></ul></nav><div class="header-actions"><a href="../cart.html" class="cart-link">Cart <span class="cart-count"></span></a><button class="mobile-menu-toggle" onclick="toggleMobileNav()"><span></span><span></span><span></span></button></div></div></header>
+  <nav class="mobile-nav" id="mobileNav"><button class="mobile-nav-close" onclick="toggleMobileNav()">&times;</button><ul><li><a href="../collections/heirloom-wooden.html">Heirloom Wooden</a></li><li><a href="../collections/imagination-builders.html">Imagination Builders</a></li><li><a href="../collections/storybook-friends.html">Storybook Friends</a></li><li><a href="../collections/wonder-learn.html">Wonder & Learn</a></li><li><a href="../cart.html">Cart</a></li></ul></nav>
+
+  <main>
+    <div class="container">
+      <nav class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-separator">/</span><a href="../collections/storybook-friends.html">Storybook Friends</a><span class="breadcrumb-separator">/</span><span>Rosie the Kind Fox</span></nav>
+      <div class="pdp-layout">
+        <div class="pdp-image img-placeholder">
+          <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+            <rect width="600" height="600" fill="#FAF8F5"/>
+            <ellipse cx="300" cy="370" rx="80" ry="100" fill="#C4A99C"/>
+            <circle cx="300" cy="270" r="70" fill="#C4A99C"/>
+            <circle cx="270" cy="256" r="8" fill="#5C5650"/>
+            <circle cx="330" cy="256" r="8" fill="#5C5650"/>
+            <ellipse cx="300" cy="290" rx="12" ry="8" fill="#5C5650"/>
+            <polygon points="240,200 260,260 220,240" fill="#C4A99C"/>
+            <polygon points="360,200 340,260 380,240" fill="#C4A99C"/>
+            <ellipse cx="300" cy="400" rx="40" ry="30" fill="#E8E4DD"/>
+          </svg>
+        </div>
+        <div class="pdp-info">
+          <p class="pdp-collection">Storybook Friends</p>
+          <h1 class="pdp-title">Rosie the Kind Fox</h1>
+          <p class="pdp-price">$42</p>
+          <div class="pdp-description">
+            <p class="pdp-description-short">A warm-hearted fox with a gentle smile, ready for tea parties and forest adventures.</p>
+            <p class="pdp-description-long">Rosie brings warmth wherever she wanders. Her russet organic cotton coat and cream-colored belly are soft against small cheeks, while her friendly expression invites endless conversation. She comes with a tiny removable scarf for seasonal dress-up.</p>
+          </div>
+          <div class="pdp-actions">
+            <div class="quantity-selector"><label>Quantity</label><div class="quantity-input"><button type="button" onclick="decrementQty()">−</button><input type="number" id="quantity" value="1" min="1" max="10" readonly><button type="button" onclick="incrementQty()">+</button></div></div>
+            <button class="btn btn--primary btn--full" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><div class="footer-logo">His Children</div><p class="footer-tagline">Thoughtful toys for purposeful play.</p><nav class="footer-nav"><a href="../collection.html">All Collections</a><a href="../collections/heirloom-wooden.html">Heirloom Wooden</a><a href="../collections/imagination-builders.html">Imagination Builders</a><a href="../collections/storybook-friends.html">Storybook Friends</a><a href="../collections/wonder-learn.html">Wonder & Learn</a></nav><p class="footer-copyright">&copy; 2024 His Children.</p></div></footer>
+
+  <script src="../js/cart.js"></script>
+  <script>
+    const productId = 'rosie-kind-fox';
+    function toggleMobileNav() { document.getElementById('mobileNav').classList.toggle('is-open'); }
+    function incrementQty() { const q = document.getElementById('quantity'); if (parseInt(q.value) < 10) q.value = parseInt(q.value) + 1; }
+    function decrementQty() { const q = document.getElementById('quantity'); if (parseInt(q.value) > 1) q.value = parseInt(q.value) - 1; }
+    function addToCart() { Cart.addItem(getProduct(productId), parseInt(document.getElementById('quantity').value)); window.location.href = '../cart.html'; }
+  </script>
+</body>
+</html>

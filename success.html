@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed | His Children</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-logo">
+        <a href="index.html">His Children</a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="collections/heirloom-wooden.html">Heirloom Wooden</a></li>
+          <li><a href="collections/imagination-builders.html">Imagination Builders</a></li>
+          <li><a href="collections/storybook-friends.html">Storybook Friends</a></li>
+          <li><a href="collections/wonder-learn.html">Wonder & Learn</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+          Cart <span class="cart-count"></span>
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Open menu" onclick="toggleMobileNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" aria-label="Close menu" onclick="toggleMobileNav()">&times;</button>
+    <ul>
+      <li><a href="collections/heirloom-wooden.html">Heirloom Wooden</a></li>
+      <li><a href="collections/imagination-builders.html">Imagination Builders</a></li>
+      <li><a href="collections/storybook-friends.html">Storybook Friends</a></li>
+      <li><a href="collections/wonder-learn.html">Wonder & Learn</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="success-page">
+      <div class="success-content">
+        <div class="success-icon"></div>
+        <h1>Thank You for Your Order</h1>
+        <p>
+          Your order has been received and is being prepared with care.
+          We'll send you an email confirmation with tracking details soon.
+        </p>
+        <p class="success-order-number" id="orderNumber">
+          Order #HC00000000
+        </p>
+
+        <div class="success-summary" id="orderSummary">
+          <h3>Order Summary</h3>
+          <div class="order-items" id="orderItems">
+            <!-- Items will be rendered here -->
+          </div>
+          <div class="cart-summary-row">
+            <span>Subtotal</span>
+            <span id="orderSubtotal">$0.00</span>
+          </div>
+          <div class="cart-summary-row">
+            <span>Shipping</span>
+            <span id="orderShipping">$0.00</span>
+          </div>
+          <div class="cart-summary-total">
+            <span>Total</span>
+            <span id="orderTotal">$0.00</span>
+          </div>
+        </div>
+
+        <p style="color: var(--color-text-secondary); font-size: var(--text-sm); margin-bottom: var(--space-xl);">
+          Every item is wrapped with intention and shipped with prayers for the
+          little ones who will receive them. Thank you for choosing thoughtful play.
+        </p>
+
+        <a href="index.html" class="btn btn--primary">Continue Shopping</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">His Children</div>
+      <p class="footer-tagline">
+        Thoughtful toys for purposeful play. Crafted with intention, made to be treasured.
+      </p>
+      <nav class="footer-nav">
+        <a href="collection.html">All Collections</a>
+        <a href="collections/heirloom-wooden.html">Heirloom Wooden</a>
+        <a href="collections/imagination-builders.html">Imagination Builders</a>
+        <a href="collections/storybook-friends.html">Storybook Friends</a>
+        <a href="collections/wonder-learn.html">Wonder & Learn</a>
+      </nav>
+      <p class="footer-copyright">&copy; 2024 His Children. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script>
+    function toggleMobileNav() {
+      const nav = document.getElementById('mobileNav');
+      nav.classList.toggle('is-open');
+    }
+
+    function renderOrderConfirmation() {
+      const order = Cart.getLastOrder();
+
+      if (!order) {
+        // No order found, show generic message
+        document.getElementById('orderSummary').style.display = 'none';
+        return;
+      }
+
+      // Display order number
+      document.getElementById('orderNumber').textContent = `Order #${order.orderNumber}`;
+
+      // Display order items
+      const orderItemsEl = document.getElementById('orderItems');
+      orderItemsEl.innerHTML = order.items.map(item => `
+        <div class="order-item">
+          <div class="order-item-image img-placeholder">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="60" fill="#E8E4DD"/>
+              <rect x="15" y="25" width="10" height="15" fill="#D4CFC5"/>
+              <rect x="25" y="20" width="10" height="20" fill="#B8AFA3"/>
+              <rect x="35" y="15" width="10" height="25" fill="#D4CFC5"/>
+            </svg>
+          </div>
+          <div class="order-item-info">
+            <div class="order-item-name">${item.name}</div>
+            <div class="order-item-quantity">Qty: ${item.quantity}</div>
+          </div>
+          <div class="order-item-price">${Cart.formatPrice(item.price * item.quantity)}</div>
+        </div>
+      `).join('');
+
+      // Display totals
+      document.getElementById('orderSubtotal').textContent = Cart.formatPrice(order.totals.subtotal);
+      document.getElementById('orderShipping').textContent = order.totals.shipping === 0 ? 'Free' : Cart.formatPrice(order.totals.shipping);
+      document.getElementById('orderTotal').textContent = Cart.formatPrice(order.totals.total);
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', renderOrderConfirmation);
+  </script>
+</body>
+</html>
