@@ -1,0 +1,274 @@
+{
+  "products": [
+    {
+      "id": "heritage-block-set",
+      "name": "The Heritage Block Set",
+      "price": 68,
+      "salePrice": null,
+      "collection": "Heirloom Wooden",
+      "collectionSlug": "heirloom-wooden",
+      "image": "images/heritage-block-set.jpg",
+      "shortDescription": "Hand-sanded maple blocks in timeless shapes, crafted to be passed down through generations.",
+      "longDescription": "Each block in this 24-piece set is cut from sustainably harvested maple and finished with natural beeswax. The simple geometric forms—squares, rectangles, arches, and columns—invite open-ended play and quiet concentration. These are the blocks that build not just towers, but memories.",
+      "featured": true
+    },
+    {
+      "id": "woodland-animal-family",
+      "name": "Woodland Animal Family",
+      "price": 45,
+      "salePrice": 36,
+      "collection": "Heirloom Wooden",
+      "collectionSlug": "heirloom-wooden",
+      "image": "images/woodland-animal-family.jpg",
+      "shortDescription": "A gentle gathering of forest friends carved from solid beechwood.",
+      "longDescription": "Five woodland creatures—fox, bear, rabbit, owl, and deer—each shaped by hand and smoothed to perfection. Their simple forms encourage imaginative storytelling while their sturdy construction ensures they'll witness countless adventures. Natural wood grain makes each set unique.",
+      "featured": false
+    },
+    {
+      "id": "classic-stacking-rainbow",
+      "name": "Classic Stacking Rainbow",
+      "price": 52,
+      "salePrice": null,
+      "collection": "Heirloom Wooden",
+      "collectionSlug": "heirloom-wooden",
+      "image": "images/classic-stacking-rainbow.jpg",
+      "shortDescription": "Six nesting arches in soft, natural-dyed hues for endless creative play.",
+      "longDescription": "This timeless rainbow stacker uses vegetable-based dyes in muted earth tones—dusty rose, sage, ochre, sky, clay, and cream. The graduated arches nest perfectly and inspire everything from bridges to tunnels to abstract sculptures. A quiet invitation to explore balance and beauty.",
+      "featured": true
+    },
+    {
+      "id": "timeless-train-set",
+      "name": "Timeless Train Set",
+      "price": 85,
+      "salePrice": 68,
+      "collection": "Heirloom Wooden",
+      "collectionSlug": "heirloom-wooden",
+      "image": "images/timeless-train-set.jpg",
+      "shortDescription": "A complete wooden railway with engine, cars, and curved track pieces.",
+      "longDescription": "The gentle click of wooden wheels on wooden track—a sound that spans generations. This 30-piece set includes a steam engine, three cars, track pieces, trees, and a small station. Magnetic couplings allow easy connecting while the smooth beechwood finish invites small hands to explore.",
+      "featured": false
+    },
+    {
+      "id": "handcrafted-memory-puzzle",
+      "name": "Handcrafted Memory Puzzle",
+      "price": 38,
+      "salePrice": null,
+      "collection": "Heirloom Wooden",
+      "collectionSlug": "heirloom-wooden",
+      "image": "images/handcrafted-memory-puzzle.jpg",
+      "shortDescription": "Twelve matching pairs of nature-inspired illustrations on solid wood tiles.",
+      "longDescription": "Turn over a leaf, find its match. These 24 thick wooden tiles feature delicate illustrations of garden treasures—butterflies, acorns, feathers, and flowers. The satisfying weight and smooth edges make this memory game a tactile pleasure as much as a mental one.",
+      "featured": false
+    },
+    {
+      "id": "architects-dream-set",
+      "name": "Architect's Dream Set",
+      "price": 72,
+      "salePrice": null,
+      "collection": "Imagination Builders",
+      "collectionSlug": "imagination-builders",
+      "image": "images/architects-dream-set.jpg",
+      "shortDescription": "Precision-cut building planks for aspiring architects and dreamers.",
+      "longDescription": "One hundred smooth planks in three sizes, each cut with exacting precision from sustainable basswood. No connectors, no instructions—just pure possibility. Watch as simple stacking evolves into towers, bridges, and fantastical structures limited only by imagination and patience.",
+      "featured": false
+    },
+    {
+      "id": "natural-building-planks",
+      "name": "Natural Building Planks",
+      "price": 58,
+      "salePrice": null,
+      "collection": "Imagination Builders",
+      "collectionSlug": "imagination-builders",
+      "image": "images/natural-building-planks.jpg",
+      "shortDescription": "Fifty carefully milled planks for freeform construction and creative exploration.",
+      "longDescription": "These planks celebrate the beauty of unfinished wood—each piece showing its own unique grain pattern. The consistent dimensions allow for stable building while the natural variations teach children that beauty lives in imperfection. Stack, balance, create, and begin again.",
+      "featured": false
+    },
+    {
+      "id": "create-connect-blocks",
+      "name": "Create & Connect Blocks",
+      "price": 48,
+      "salePrice": null,
+      "collection": "Imagination Builders",
+      "collectionSlug": "imagination-builders",
+      "image": "images/create-connect-blocks.jpg",
+      "shortDescription": "Interlocking wooden blocks with gentle notches for secure building.",
+      "longDescription": "The subtle notches on each block create satisfying connections without frustration. Thirty-six pieces in natural maple, each designed to fit together in countless configurations. The result: structures that stand proud and builders who beam with accomplishment.",
+      "featured": false
+    },
+    {
+      "id": "little-engineer-kit",
+      "name": "Little Engineer Kit",
+      "price": 65,
+      "salePrice": 52,
+      "collection": "Imagination Builders",
+      "collectionSlug": "imagination-builders",
+      "image": "images/little-engineer-kit.jpg",
+      "shortDescription": "Wheels, axles, and building pieces for creating vehicles that really roll.",
+      "longDescription": "Engineering meets artistry in this thoughtfully designed kit. Wooden wheels, axles, chassis pieces, and decorative elements combine to create cars, trucks, and vehicles yet to be invented. The wooden screwdriver and nuts teach cause and effect while building fine motor skills.",
+      "featured": false
+    },
+    {
+      "id": "magnetic-wonder-tiles",
+      "name": "Magnetic Wonder Tiles",
+      "price": 78,
+      "salePrice": null,
+      "collection": "Imagination Builders",
+      "collectionSlug": "imagination-builders",
+      "image": "images/magnetic-wonder-tiles.jpg",
+      "shortDescription": "Geometric wooden tiles with embedded magnets for three-dimensional creation.",
+      "longDescription": "Hidden magnets transform flat tiles into soaring structures. This set of forty pieces includes squares, triangles, and special shapes, each crafted from sustainable birch with soft, muted colors. The magnetic click provides instant feedback, while the geometric forms introduce spatial reasoning through play.",
+      "featured": false
+    },
+    {
+      "id": "oliver-gentle-bear",
+      "name": "Oliver the Gentle Bear",
+      "price": 42,
+      "salePrice": null,
+      "collection": "Storybook Friends",
+      "collectionSlug": "storybook-friends",
+      "image": "images/oliver-gentle-bear.jpg",
+      "shortDescription": "A soft, huggable companion made from organic cotton and filled with natural wool.",
+      "longDescription": "Oliver arrived one autumn morning, ready to be a faithful friend. His organic cotton exterior is dyed with plant-based colors, while his wool stuffing comes from small family farms. At 14 inches tall, he's the perfect size for carrying on adventures and providing comfort at rest.",
+      "featured": true
+    },
+    {
+      "id": "luna-comfort-bunny",
+      "name": "Luna the Comfort Bunny",
+      "price": 38,
+      "salePrice": 30,
+      "collection": "Storybook Friends",
+      "collectionSlug": "storybook-friends",
+      "image": "images/luna-comfort-bunny.jpg",
+      "shortDescription": "A gentle rabbit friend with the softest organic cotton and floppy ears made for holding.",
+      "longDescription": "Luna understands the importance of quiet moments. Her long, floppy ears are perfectly designed for small hands to hold during naps or car rides. Made entirely from GOTS-certified organic cotton with a lavender sachet hidden in her heart, she brings peace wherever she goes.",
+      "featured": false
+    },
+    {
+      "id": "sebastian-wise-owl",
+      "name": "Sebastian the Wise Owl",
+      "price": 40,
+      "salePrice": null,
+      "collection": "Storybook Friends",
+      "collectionSlug": "storybook-friends",
+      "image": "images/sebastian-wise-owl.jpg",
+      "shortDescription": "A thoughtful owl companion who watches over bedtime with calm, knowing eyes.",
+      "longDescription": "Sebastian keeps watch through the night with his embroidered eyes that never close. This 12-inch guardian is crafted from organic linen and cotton, with wings that wrap around for hugging. His presence reminds little ones that wisdom comes to those who rest well.",
+      "featured": false
+    },
+    {
+      "id": "rosie-kind-fox",
+      "name": "Rosie the Kind Fox",
+      "price": 42,
+      "salePrice": null,
+      "collection": "Storybook Friends",
+      "collectionSlug": "storybook-friends",
+      "image": "images/rosie-kind-fox.jpg",
+      "shortDescription": "A warm-hearted fox with a gentle smile, ready for tea parties and forest adventures.",
+      "longDescription": "Rosie brings warmth wherever she wanders. Her russet organic cotton coat and cream-colored belly are soft against small cheeks, while her friendly expression invites endless conversation. She comes with a tiny removable scarf for seasonal dress-up.",
+      "featured": false
+    },
+    {
+      "id": "theodore-brave-lion",
+      "name": "Theodore the Brave Lion",
+      "price": 45,
+      "salePrice": null,
+      "collection": "Storybook Friends",
+      "collectionSlug": "storybook-friends",
+      "image": "images/theodore-brave-lion.jpg",
+      "shortDescription": "A courageous lion friend whose soft mane and steady heart inspire confidence.",
+      "longDescription": "Theodore may be king of the savanna, but his heart is gentle. His organic cotton mane frames a face full of quiet courage, reminding little ones that bravery isn't about roaring—it's about facing each day with kindness. At 15 inches, he's substantial enough to lean on.",
+      "featured": false
+    },
+    {
+      "id": "nature-discovery-kit",
+      "name": "Nature Discovery Kit",
+      "price": 55,
+      "salePrice": null,
+      "collection": "Wonder & Learn",
+      "collectionSlug": "wonder-learn",
+      "image": "images/nature-discovery-kit.jpg",
+      "shortDescription": "A wooden collection box with magnifying glass, specimen jars, and nature guide.",
+      "longDescription": "Every walk becomes an expedition with this thoughtfully assembled kit. The solid wood collection box holds a real glass magnifying lens, three specimen jars with wooden lids, collection bags, and an illustrated field guide. Encourage the wonder that comes from paying attention to small things.",
+      "featured": true
+    },
+    {
+      "id": "first-words-letters",
+      "name": "First Words & Letters",
+      "price": 42,
+      "salePrice": null,
+      "collection": "Wonder & Learn",
+      "collectionSlug": "wonder-learn",
+      "image": "images/first-words-letters.jpg",
+      "shortDescription": "Tactile wooden letter tiles with simple word-building cards and canvas bag.",
+      "longDescription": "Language comes alive through touch. These 52 letter tiles—two complete alphabets—are cut from smooth maple with gently rounded edges. The accompanying word cards feature simple illustrations and large letters, while the canvas storage bag makes learning portable and tidy.",
+      "featured": false
+    },
+    {
+      "id": "counting-garden-set",
+      "name": "Counting Garden Set",
+      "price": 48,
+      "salePrice": 38,
+      "collection": "Wonder & Learn",
+      "collectionSlug": "wonder-learn",
+      "image": "images/counting-garden-set.jpg",
+      "shortDescription": "Numbered flower pots and wooden vegetables for hands-on counting practice.",
+      "longDescription": "Plant one carrot, plant two. This garden-themed counting set includes ten numbered wooden pots and 55 vegetables in five varieties. Children match quantities to numbers while developing fine motor skills through the planting motion. Mathematics blooms naturally through purposeful play.",
+      "featured": false
+    },
+    {
+      "id": "little-explorers-map",
+      "name": "Little Explorer's Map",
+      "price": 35,
+      "salePrice": null,
+      "collection": "Wonder & Learn",
+      "collectionSlug": "wonder-learn",
+      "image": "images/little-explorers-map.jpg",
+      "shortDescription": "A fabric world map with wooden landmark pieces and simple geography cards.",
+      "longDescription": "The world unfolds on this soft, quilted map. Twenty wooden landmark pieces—from the Eiffel Tower to Mount Fuji—find their homes across continents, while illustrated cards share simple facts about each place. Roll it up and take your travels anywhere.",
+      "featured": false
+    },
+    {
+      "id": "seasons-learning-board",
+      "name": "Seasons Learning Board",
+      "price": 52,
+      "salePrice": null,
+      "collection": "Wonder & Learn",
+      "collectionSlug": "wonder-learn",
+      "image": "images/seasons-learning-board.jpg",
+      "shortDescription": "An interactive wooden board teaching seasons, weather, and daily rhythms.",
+      "longDescription": "Each morning brings a moment of connection with this beautiful learning board. Moveable wooden pieces track the season, weather, day of week, and daily rhythm. Hand-painted illustrations celebrate the changing year while establishing comforting routines. Hooks and pegs keep everything in place.",
+      "featured": false
+    }
+  ],
+  "collections": [
+    {
+      "id": "heirloom-wooden",
+      "name": "Heirloom Wooden",
+      "description": "Timeless wooden toys crafted to be treasured and passed down through generations. Each piece celebrates the beauty of natural materials and the joy of simple, open-ended play.",
+      "image": "images/collection-heirloom-wooden.jpg",
+      "shortDescription": "Timeless toys crafted to be treasured for generations"
+    },
+    {
+      "id": "imagination-builders",
+      "name": "Imagination Builders",
+      "description": "Construction sets that transform simple pieces into extraordinary creations. Perfect for budding architects, engineers, and dreamers who see possibility in every plank and block.",
+      "image": "images/collection-imagination-builders.jpg",
+      "shortDescription": "Construction sets for aspiring architects and dreamers"
+    },
+    {
+      "id": "storybook-friends",
+      "name": "Storybook Friends",
+      "description": "Soft companions crafted from organic materials, ready for a lifetime of love. Each friend is designed to comfort, inspire stories, and become a treasured companion through all of childhood's adventures.",
+      "image": "images/collection-storybook-friends.jpg",
+      "shortDescription": "Soft companions ready for a lifetime of love"
+    },
+    {
+      "id": "wonder-learn",
+      "name": "Wonder & Learn",
+      "description": "Thoughtful tools that nurture curiosity and celebrate the joy of discovery. Learning happens naturally here—through exploration, hands-on experience, and the simple pleasure of figuring things out.",
+      "image": "images/collection-wonder-learn.jpg",
+      "shortDescription": "Thoughtful tools that nurture curiosity and discovery"
+    }
+  ]
+}
