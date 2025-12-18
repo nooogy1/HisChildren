@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woodland Animal Family | His Children</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-logo"><a href="../index.html">His Children</a></div>
+      <nav class="main-nav"><ul>
+        <li><a href="../collections/heirloom-wooden.html">Heirloom Wooden</a></li>
+        <li><a href="../collections/imagination-builders.html">Imagination Builders</a></li>
+        <li><a href="../collections/storybook-friends.html">Storybook Friends</a></li>
+        <li><a href="../collections/wonder-learn.html">Wonder & Learn</a></li>
+      </ul></nav>
+      <div class="header-actions">
+        <a href="../cart.html" class="cart-link">Cart <span class="cart-count"></span></a>
+        <button class="mobile-menu-toggle" onclick="toggleMobileNav()"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" onclick="toggleMobileNav()">&times;</button>
+    <ul>
+      <li><a href="../collections/heirloom-wooden.html">Heirloom Wooden</a></li>
+      <li><a href="../collections/imagination-builders.html">Imagination Builders</a></li>
+      <li><a href="../collections/storybook-friends.html">Storybook Friends</a></li>
+      <li><a href="../collections/wonder-learn.html">Wonder & Learn</a></li>
+      <li><a href="../cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../index.html">Home</a><span class="breadcrumb-separator">/</span>
+        <a href="../collections/heirloom-wooden.html">Heirloom Wooden</a><span class="breadcrumb-separator">/</span>
+        <span>Woodland Animal Family</span>
+      </nav>
+      <div class="pdp-layout">
+        <div class="pdp-image">
+          <img src="../images/woodland-animal-family.jpg" alt="Woodland Animal Family">
+        </div>
+        <div class="pdp-info">
+          <p class="pdp-collection">Heirloom Wooden</p>
+          <h1 class="pdp-title">Woodland Animal Family</h1>
+          <p class="pdp-price">$45</p>
+          <div class="pdp-description">
+            <p class="pdp-description-short">A gentle gathering of forest friends carved from solid beechwood.</p>
+            <p class="pdp-description-long">Five woodland creatures—fox, bear, rabbit, owl, and deer—each shaped by hand and smoothed to perfection. Their simple forms encourage imaginative storytelling while their sturdy construction ensures they'll witness countless adventures. Natural wood grain makes each set unique.</p>
+          </div>
+          <div class="pdp-actions">
+            <div class="quantity-selector">
+              <label>Quantity</label>
+              <div class="quantity-input">
+                <button type="button" onclick="decrementQty()">−</button>
+                <input type="number" id="quantity" value="1" min="1" max="10" readonly>
+                <button type="button" onclick="incrementQty()">+</button>
+              </div>
+            </div>
+            <button class="btn btn--primary btn--full" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">His Children</div>
+      <p class="footer-tagline">Thoughtful toys for purposeful play.</p>
+      <nav class="footer-nav">
+        <a href="../collection.html">All Collections</a>
+        <a href="../collections/heirloom-wooden.html">Heirloom Wooden</a>
+        <a href="../collections/imagination-builders.html">Imagination Builders</a>
+        <a href="../collections/storybook-friends.html">Storybook Friends</a>
+        <a href="../collections/wonder-learn.html">Wonder & Learn</a>
+      </nav>
+      <p class="footer-copyright">&copy; 2024 His Children.</p>
+    </div>
+  </footer>
+
+  <script src="../js/cart.js"></script>
+  <script>
+    const productId = 'woodland-animal-family';
+    function toggleMobileNav() { document.getElementById('mobileNav').classList.toggle('is-open'); }
+    function incrementQty() { const q = document.getElementById('quantity'); if (parseInt(q.value) < 10) q.value = parseInt(q.value) + 1; }
+    function decrementQty() { const q = document.getElementById('quantity'); if (parseInt(q.value) > 1) q.value = parseInt(q.value) - 1; }
+    function addToCart() { Cart.addItem(getProduct(productId), parseInt(document.getElementById('quantity').value)); window.location.href = '../cart.html'; }
+  </script>
+</body>
+</html>

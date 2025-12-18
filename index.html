@@ -75,7 +75,7 @@
       <p>
         We believe play is more than pastime. It's how children learn stewardship,
         patience, and the satisfaction of making something with their own hands.
-        These are toys that tell a story and become part of yours.
+        These are toys that tell a storyand become part of yours.
       </p>
     </section>
 
@@ -139,75 +139,46 @@
           <p class="text-secondary">Beloved by families, crafted with care</p>
         </div>
 
-        <div class="product-grid" id="featured-products">
-          <!-- Products will be rendered dynamically -->
-        </div>
-      </div>
-    </section>
+        <div class="product-grid">
+          <a href="products/heritage-block-set.html" class="product-card">
+            <div class="product-card-image">
+              <img src="images/heritage-block-set.jpg" alt="The Heritage Block Set">
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">The Heritage Block Set</h3>
+              <p class="product-card-price">$68</p>
+            </div>
+          </a>
 
-    <!-- Customer Reviews Section -->
-    <section class="reviews-section">
-      <div class="container">
-        <div class="reviews-header">
-          <h2>What Families Are Saying</h2>
-          <div class="reviews-rating">
-            <span class="reviews-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span>4.9 out of 5 based on 247 reviews</span>
-          </div>
-        </div>
+          <a href="products/oliver-gentle-bear.html" class="product-card">
+            <div class="product-card-image">
+              <img src="images/oliver-gentle-bear.jpg" alt="Oliver the Gentle Bear">
+            </div>
+            <div class="product-card-info">
+              <h3 class="product-card-name">Oliver the Gentle Bear</h3>
+              <p class="product-card-price">$42</p>
+            </div>
+          </a>
 
-        <div class="reviews-grid">
-          <div class="review-card">
-            <div class="review-card-header">
-              <div class="review-avatar">M</div>
-              <div class="review-author">
-                <div class="review-author-name">Margaret T.</div>
-                <div class="review-author-verified">Verified Buyer</div>
-              </div>
-              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <a href="products/classic-stacking-rainbow.html" class="product-card">
+            <div class="product-card-image">
+              <img src="images/classic-stacking-rainbow.jpg" alt="Classic Stacking Rainbow">
             </div>
-            <div class="review-content">
-              "These blocks remind me of the toys my own children played with 40 years ago. Finally, something for my grandchildren that isn't plastic and doesn't need batteries. The quality is exceptional, and I know these will be passed down."
+            <div class="product-card-info">
+              <h3 class="product-card-name">Classic Stacking Rainbow</h3>
+              <p class="product-card-price">$52</p>
             </div>
-            <div class="review-product">Purchased: The Heritage Block Set</div>
-          </div>
+          </a>
 
-          <div class="review-card">
-            <div class="review-card-header">
-              <div class="review-avatar">R</div>
-              <div class="review-author">
-                <div class="review-author-name">Richard & Susan H.</div>
-                <div class="review-author-verified">Verified Buyer</div>
-              </div>
-              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <a href="products/nature-discovery-kit.html" class="product-card">
+            <div class="product-card-image">
+              <img src="images/nature-discovery-kit.jpg" alt="Nature Discovery Kit" style="object-fit: cover; width: 100%; height: 100%;">
             </div>
-            <div class="review-content">
-              "We've been searching for toys made right here in America with good values in mind. His Children delivered beautifully. Our grandkids actually put down the iPad to play with the train set. That says everything."
+            <div class="product-card-info">
+              <h3 class="product-card-name">Nature Discovery Kit</h3>
+              <p class="product-card-price">$55</p>
             </div>
-            <div class="review-product">Purchased: Timeless Train Set</div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-card-header">
-              <div class="review-avatar">D</div>
-              <div class="review-author">
-                <div class="review-author-name">Dorothy M.</div>
-                <div class="review-author-verified">Verified Buyer</div>
-              </div>
-              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-            <div class="review-content">
-              "It brings me such joy to see my grandchildren playing the way we used to play. Real toys, real imagination, real connection. Oliver the Bear is now part of the family. God bless this company for doing things the right way."
-            </div>
-            <div class="review-product">Purchased: Oliver the Gentle Bear</div>
-          </div>
-        </div>
-
-        <div class="reviews-footer">
-          <div class="reviews-badge">
-            <span>Powered by</span>
-            <strong>Verified Reviews</strong>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -253,13 +224,6 @@
         <a href="collections/storybook-friends.html">Storybook Friends</a>
         <a href="collections/wonder-learn.html">Wonder & Learn</a>
       </nav>
-      <nav class="footer-nav footer-legal">
-        <a href="about.html">About Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Return/Refund Policy</a>
-        <a href="#">Shipping Policy</a>
-      </nav>
       <p class="footer-copyright">&copy; 2024 His Children. All rights reserved.</p>
     </div>
   </footer>
@@ -270,20 +234,6 @@
       const nav = document.getElementById('mobileNav');
       nav.classList.toggle('is-open');
     }
-
-    // Load products and render featured items
-    document.addEventListener('DOMContentLoaded', async () => {
-      await loadProductData('');
-
-      // Render featured products
-      const featuredContainer = document.getElementById('featured-products');
-      const allProducts = getAllProducts();
-      const featuredProducts = allProducts.filter(p => p.featured);
-
-      if (featuredContainer && featuredProducts.length > 0) {
-        featuredContainer.innerHTML = featuredProducts.map(p => renderProductCard(p, '')).join('');
-      }
-    });
   </script>
 </body>
 </html>
